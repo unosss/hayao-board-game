@@ -20,7 +20,7 @@ def signupview(request):
             return render(request, 'signup.html', {'error':'このユーザーは既に登録されています。'})
         
     else :
-        return redirect('signup')
+        return render(request, 'signup.html', {})
     return redirect('login')
 
 def loginview(request):
