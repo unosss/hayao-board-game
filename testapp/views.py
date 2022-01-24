@@ -21,7 +21,7 @@ def signupview(request):
         
     else :
         return redirect('login')
-    return render(request, 'signup.html', {})
+    return redirect('login')
 
 def loginview(request):
     if request.method == 'POST':
